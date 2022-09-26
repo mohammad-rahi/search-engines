@@ -20,7 +20,8 @@ const Bing = () => {
 
     useEffect(() => {
         dispatch(handleChangeEngine(engineName));
-        navigate(`/${engineName}`)
+        navigate(`/${engineName}`);
+        document.title = "Bing";
     }, [engineName])
 
     return (

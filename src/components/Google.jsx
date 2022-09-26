@@ -20,7 +20,8 @@ const Google = () => {
 
     useEffect(() => {
         dispatch(handleChangeEngine(engineName));
-        navigate(`/${engineName}`)
+        navigate(`/${engineName}`);
+        document.title = "Google";
     }, [engineName])
 
     return (
