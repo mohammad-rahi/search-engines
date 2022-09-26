@@ -27,7 +27,7 @@ const Google = () => {
     return (
         <div className='google'>
             <Header />
-            <div className='google_wrapper d-flex justify-content-center align-items-center flex-column'>
+            <div className='google_wrapper d-flex mt-5 pt-5 align-items-center flex-column'>
                 <Image src="/assets/images/googlelogo.png" className='google_logo user-select-none' />
                 <Form className='my-4 google_form'>
                     <Form.Group className="google_input d-flex align-items-center justify-content-center border">
@@ -40,7 +40,7 @@ const Google = () => {
                                 <option value="bing">Bing</option>
                             </select>
                         </Form.Label>
-                        <input type="text" className='border-0' id="search" title='Search' />
+                        <input type="text" className='border-0 ps-1' id="search" title='Search' />
                         <div className='icon_wrapper d-flex justify-content-center align-items-center text-primary'>
                             <FaMicrophone />
                         </div>

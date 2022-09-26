@@ -36,11 +36,11 @@ body {
 }
 
 .google_wrapper {
-    min-height: 80vh;
+    min-height: 100vh;
 }
 
 .google_logo {
-    max-width: 280px !important;
+    max-width: 250px !important;
     width: 80%;
 }
 
@@ -80,6 +80,10 @@ body {
     padding: .6rem 0;
     font-size: 1rem;
     font-weight: 400;
+}
+
+select{
+    background-color: transparent;
 }
 
 .google_input select {
