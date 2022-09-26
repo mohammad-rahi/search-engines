@@ -1,38 +1,200 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header */
+.nav-link {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-link:hover {
+    text-decoration: underline;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.apps {
+    font-size: 1.3rem !important;
+    padding: .5rem !important;
 }
 
-.App-link {
-  color: #61dafb;
+.apps:hover,
+.avatar:hover {
+    background-color: #efefef;
+    transition: all 200ms ease-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.avatar {
+    width: 40px;
+    padding: 5px;
+}
+
+/* Google */
+.google {
+    font-size: 14.5px;
+}
+
+.google_wrapper {
+    min-height: 80vh;
+}
+
+.google_logo {
+    max-width: 280px !important;
+    width: 80%;
+}
+
+.google_input,
+.bing_input {
+    max-width: 500px;
+    width: 90vw;
+    border-radius: 30px;
+}
+
+.google_input:hover,
+.google_input:focus-within {
+    box-shadow: 1px 1px 8px rgba(0 0 0 / 20%);
+}
+
+.icon_wrapper {
+    padding: .5rem 1rem;
+    border-radius: 30px 0 0 30px;
+}
+
+.icon_wrapper:last-child {
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+}
+
+.icon_wrapper:first-child svg {
+    font-size: .9rem;
+}
+
+.icon_wrapper svg {
+    font-size: 1.1rem;
+}
+
+.google_input input,
+.bing_input input {
+    width: 100%;
+    padding: .6rem 0;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.google_input select {
+    padding: .6rem 0;
+}
+
+.google_input input:focus,
+.google_input select:focus,
+.bing_input input:focus,
+.bing_input select:focus {
+    outline: none;
+}
+
+/* Footer */
+.footer {
+    background-color: #efefef;
+}
+
+.footer_links p {
+    cursor: pointer;
+}
+
+.footer_links p:hover {
+    text-decoration: underline;
+}
+
+/* Bing */
+.bing {
+    background: #555 url("/public//assets//images/th.jfif") no-repeat center/cover;
+    min-height: 100vh;
+    position: relative;
+    font-size: 13px;
+    transition: all 200ms linear;
+}
+
+.bing::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 75%;
+    background: linear-gradient(to top, rgba(0 0 0 / 0%) 50%, rgba(0 0 0 / 12%) 100%);
+}
+
+.bing::after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0 0 0 / 0%) 25%, rgba(0 0 0 / 20%) 50%, rgba(0 0 0 / 60%) 100%);
+}
+
+.bing .nav-link:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.bing_form {
+    z-index: 100;
+}
+
+.bing_form:focus-within::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: rgba(0 0 0 / 50%);
+}
+
+.bing_input input {
+    padding: .8rem;
+}
+
+.bing_input select {
+    padding: .8rem 0 .8rem 1rem;
+    border-radius: 30px 0 0 30px;
+}
+
+.bing_input .icon_wrapper1 {
+    padding: .8rem .5rem !important;
+    border-radius: 0;
+}
+
+.bing_input .icon_wrapper2 {
+    padding: .8rem 1rem .8rem .5rem !important;
+}
+
+.bing .nav-link:hover,
+.bing .avatar:hover {
+    background: none !important;
+}
+
+.google,
+.bing {
+    animation: animate_fade 250ms linear;
+}
+
+@keyframes animate_fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .google_btns{
+        flex-direction: column;
+    }
 }
