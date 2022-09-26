@@ -5,7 +5,6 @@ import { IoApps } from 'react-icons/io5'
 import { MdMoreHoriz } from 'react-icons/md'
 import { useSelector } from 'react-redux'
 import { FaBars } from 'react-icons/fa'
-import Microsoftlogo from '../bing/Microsoftlogo'
 
 const Header = () => {
     const engine = useSelector(state => state.engine.engineName);
@@ -16,7 +15,7 @@ const Header = () => {
                 engine === "bing" ? <Navbar expand="lg" className='p-0'>
                     <Container>
                         <Navbar.Brand href="#" className='me-5'>
-                            <Image src={Microsoftlogo} />
+                            <Image src="/assets/images/MicrosoftBingLogo.png" className='microsoft_logo' />
                         </Navbar.Brand>
                         <Nav className="ms-4 d-flex flex-row align-items-center">
                             <Nav.Link href="#" className='text-light'>Images</Nav.Link>
