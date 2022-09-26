@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { FaSearch, FaMicrophone, FaTimes } from 'react-icons/fa'
 import { Form, Image } from 'react-bootstrap'
-import Header from '../google/Header'
-import Footer from '../google/Footer'
+import Header from './Header'
+import Footer from './Footer'
 import { useDispatch, useSelector } from 'react-redux'
-import { handleChangeEngine } from '../../redux/engineSlice'
+import { handleChangeEngine } from '../redux/engineSlice'
 import { useNavigate } from 'react-router-dom'
 
 const Bing = () => {

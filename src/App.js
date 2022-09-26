@@ -2,8 +2,8 @@ import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Bing from './components/bing/Bing';
-import Google from './components/google/Google';
+import Bing from './components/Bing';
+import Google from './components/Google';
 
 function App() {
   return (

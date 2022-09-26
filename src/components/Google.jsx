@@ -4,7 +4,7 @@ import { Form, Image } from 'react-bootstrap'
 import Header from './Header'
 import Footer from './Footer'
 import { useDispatch, useSelector } from 'react-redux'
-import { handleChangeEngine } from '../../redux/engineSlice'
+import { handleChangeEngine } from '../redux/engineSlice'
 import { useNavigate } from 'react-router-dom'
 
 const Google = () => {
