@@ -17,7 +17,7 @@ const Header = () => {
                         <Navbar.Brand href="#" className='me-5'>
                             <Image src="/assets/images/MicrosoftBingLogo.png" className='microsoft_logo' />
                         </Navbar.Brand>
-                        <Nav className="ms-4 d-flex flex-row align-items-center">
+                        <Nav className="ms-4 d-sm-flex d-none flex-row align-items-center">
                             <Nav.Link href="#" className='text-light'>Images</Nav.Link>
                             <Nav.Link href="#" className='ms-3 text-light'>Videos</Nav.Link>
                             <Nav.Link href="#" className='ms-3 text-light'>Maps</Nav.Link>
@@ -26,10 +26,8 @@ const Header = () => {
                             </Nav.Link>
                         </Nav>
                         <Nav className="ms-auto d-flex flex-row align-items-center">
-                            <Nav.Link href="#" className='text-light'>বাংলা</Nav.Link>
                             <Nav.Link href="#" className='ms-3 text-light'>
-                                Mohammad
-                                <Image roundedCircle className='avatar user-select-none ms-1' src='/assets/images/img_avatar.png' />
+                                <Image roundedCircle className='avatar user-select-none' src='/assets/images/img_avatar.png' />
                             </Nav.Link>
                             <Nav.Link href="#" className='text-light apps rounded-circle d-flex justify-content-center align-items-center ms-3'>
                                 <FaBars />
