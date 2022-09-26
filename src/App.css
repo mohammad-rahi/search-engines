@@ -36,11 +36,11 @@ body {
 }
 
 .google_wrapper {
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .google_logo {
-    max-width: 250px !important;
+    max-width: 260px !important;
     width: 80%;
 }
 
@@ -204,5 +204,11 @@ select{
 @media screen and (max-width: 360px) {
     .google_btns{
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .google_logo{
+        width: 200px;
     }
 }
